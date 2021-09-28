@@ -43,12 +43,24 @@ body {
  }
 
 /* ----------Main article - nav----------- */
-.main-nav ul {
+.main-nav {
     padding: 65px 0;
+    width: 980px;
+    margin: 0 auto;
+}
+.main-nav ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /* background: rgb(115,115,115); */
+    background: green;
+    border: 1px solid #6d6d6d;
+    background: linear-gradient(180deg, rgba(115,115,115,1) 0%, rgba(94,94,94,1) 50%, rgba(112,112,112,1) 50%, rgba(141,141,141,1) 100%);
+    height: 36px;
+}
+.main-nav li {
+    color: white;
 }
 
 /* ----------Main article - bg text----------- */
@@ -117,4 +129,6 @@ p.copyright a:first-child {
     padding-right: 5px;
     margin-right: 5px;
 }
+
+
 
