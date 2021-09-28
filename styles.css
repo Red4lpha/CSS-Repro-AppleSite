@@ -1,5 +1,6 @@
 :root {
     --GenWidth: 1440px;
+    --nav-blue: #08c;
 }
 
 * {
@@ -40,4 +41,80 @@ body {
     background-position: center bottom;
     width: auto;
  }
+
+/* ----------Main article - nav----------- */
+.main-nav ul {
+    padding: 65px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------Main article - bg text----------- */
+.bg-text {
+    text-align: center;
+    color: white;
+    width: 700px;
+    margin: 0 auto;
+}
+
+/* ----------section - products nav----------- */
+
+.products-nav ul {
+    display: flex;
+    flex-direction: row;
+}
+.products-nav ul > * {
+    padding-right: 2px;
+}
+
+/* ----------section - footer----------- */
+
+footer {
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 13px;
+    padding-bottom: 40px;
+    font-size: xx-small;
+}
+footer.footer-container a{
+    color: var(--nav-blue);
+}
+
+footer > * {
+    flex-basis: 50%;
+}
+
+/* ----------section - footer-right------ */
+
+ul.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+ul.footer-nav li{
+    padding: 0 5px;
+    border-right: 1px solid var(--nav-blue);
+}
+ul.footer-nav li:last-child {
+    padding-right: 0;
+    border-right: 0;
+}
+
+/* ----------section - footer-left------ */
+
+p.info {
+    padding-bottom: 15px;
+}
+p.copyright a:first-child {
+    border-right: 1px solid var(--nav-blue);
+    padding-right: 5px;
+    margin-right: 5px;
+}
 
