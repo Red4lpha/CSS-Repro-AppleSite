@@ -23,30 +23,21 @@ body {
     position: relative;
 }
 
-/* ----------header----------- */
-header {
-    z-index: 2;
-    position: relative;
-}
-
-
 /* ----------Main content----------- */
 
 .main-container {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
+    overflow: hidden;
 }
 
 /* ----------Main article----------- */
 
-.main-image {
-    overflow: hidden;
-    /* max-height: 676px; */
-}
- .image-bg {
-     background-image: url(./media/bg.jpg);
-     height: 676px;
-     background-position: center bottom;
-     width: auto;
+ .bg-image {
+    background-image: url(./media/bg.jpg);
+    height: 676px;
+    background-position: center bottom;
+    width: auto;
  }
+
