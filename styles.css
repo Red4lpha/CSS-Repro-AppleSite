@@ -145,7 +145,19 @@ li.nav-search:hover {
     font-size: 30px;
 }
 .text-3 {
-    font-size: 25px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: center;
+    fill: white;
+}
+.text-3 a {
+    margin: 5px 0;
+    padding: 0 5px 0 0;
+}
+.text-3 a:hover {
+    border-bottom: 1px solid white;
 }
 
 /* ----------section - products nav----------- */
