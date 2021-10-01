@@ -37,14 +37,14 @@ body {
 
  .bg-image {
     background-image: url(./media/bg.jpg);
-    height: 676px;
+    height: 595px;
     background-position: center bottom;
     width: auto;
  }
 
 /* ----------Main article - nav----------- */
 .main-nav {
-    padding: 65px 0;
+    padding: 100px 0 65px 0;
     width: 980px;
     margin: 0 auto;
 }
@@ -129,8 +129,23 @@ li.nav-search:hover {
 .bg-text {
     text-align: center;
     color: white;
-    width: 700px;
+    width: 800px;
     margin: 0 auto;
+    padding-top: 0px;
+}
+.bg-text-item {
+    font-weight:100;
+    padding-bottom: 20px;
+}
+
+.text-1 {
+    font-size: 60px;
+}
+.text-2 {
+    font-size: 30px;
+}
+.text-3 {
+    font-size: 25px;
 }
 
 /* ----------section - products nav----------- */
