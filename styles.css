@@ -13,7 +13,7 @@
 ul {
     list-style:none
 }
-a, a:hover, a:visited, a:active {
+a, a:hover, a:visited, a:active{
     color: inherit;
     text-decoration: none;
 }
@@ -61,16 +61,69 @@ body {
 }
 .main-nav li {
     color: white;
-    width: 106px;
+    flex-basis: 106px;
     text-align: center;
     padding: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-right: 1px solid darkslategrey;
+    font-size: 13px;
+    text-shadow:  1px 1px #000000;
+    font-weight: 300;
+}
+.main-nav li:last-child {
+    border-right: none;
+    flex-basis: auto;
+    flex: 1;
 }
 .main-nav li:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
 }
+li.nav-search:hover {
+    background-image: none;
+}
+.nav-apple {
+    fill: #d8d8d9;
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 1px -1px 1px rgba(0, 0, 0, .7));
+}
+.nav-apple svg{
+    width: 25px;
+    height: 25px;
+}
+.nav-search {
+    width: auto;
+}
+.nav-search input{
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    background: inherit;
+    -webkit-box-shadow: inset 3px 3px 8px 1px rgba(0,0,0,0.68); 
+    box-shadow: inset 1px 1px 3px 1px rgba(0,0,0,0.68);
+    border: 0;
+    /* background-image: url(./media/search.svg); */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" stroke="white" viewBox="-2.5 -2.5 24 24" width="18" height="18" preserveAspectRatio="xMinYMin"><path d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm6.32-1.094l3.58 3.58a1 1 0 1 1-1.415 1.413l-3.58-3.58a8 8 0 1 1 1.414-1.414z"></path></svg>');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 5%;
+    color: white;
+}
+.nav-search input[type="text"]{
+    padding-left: 20px; 
+}
+.nav-search input:focus {
+    border: none;
+    outline: none;
+    background: white;
+    color: black;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" stroke="black" viewBox="-2.5 -2.5 24 24" width="18" height="18" preserveAspectRatio="xMinYMin"><path d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm6.32-1.094l3.58 3.58a1 1 0 1 1-1.415 1.413l-3.58-3.58a8 8 0 1 1 1.414-1.414z"></path></svg>');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 5%;
+}
+
 
 /* ----------Main article - bg text----------- */
 .bg-text {
