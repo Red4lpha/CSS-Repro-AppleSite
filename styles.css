@@ -37,14 +37,14 @@ body {
 
  .bg-image {
     background-image: url(./media/bg.jpg);
-    height: 595px;
+    height: 675px;
     background-position: center bottom;
     width: auto;
  }
 
 /* ----------Main article - nav----------- */
 .main-nav {
-    padding: 100px 0 65px 0;
+    padding: 90px 0 110px 0;
     width: 980px;
     margin: 0 auto;
 }
@@ -139,7 +139,7 @@ li.nav-search:hover {
 }
 
 .text-1 {
-    font-size: 60px;
+    font-size: 50px;
 }
 .text-2 {
     font-size: 30px;
@@ -149,7 +149,9 @@ li.nav-search:hover {
 }
 
 /* ----------section - products nav----------- */
-
+.products-nav {
+    padding-top: 3px;
+}
 .products-nav ul {
     display: flex;
     flex-direction: row;
