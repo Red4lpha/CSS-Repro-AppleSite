@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 :root {
     --GenWidth: 1440px;
     --nav-blue: #08c;
@@ -124,6 +125,11 @@ li.nav-search:hover {
 
 
 /* ----------Main article - bg text----------- */
+h1 {
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-text-stroke: 1px white;
+}
+
 .bg-text {
     text-align: center;
     color: white;
@@ -137,13 +143,13 @@ li.nav-search:hover {
 }
 
 .text-1 {
-    font-size: 50px;
+    font-size: 60px;
 }
 .text-2 {
     font-size: 30px;
 }
 .text-3 {
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
     flex-direction: row;
     align-content: flex-end;
@@ -186,6 +192,9 @@ footer {
 footer.footer-container a{
     color: var(--nav-blue);
 }
+footer.footer-container a:hover{
+    border-bottom:1px solid var(--nav-blue);
+}
 
 footer > * {
     flex-basis: 50%;
@@ -206,6 +215,9 @@ ul.footer-nav li{
 ul.footer-nav li:last-child {
     padding-right: 0;
     border-right: 0;
+}
+ul.footer-nav li:last-child :hover {
+    border-bottom: 0;
 }
 
 /* ----------section - footer-left------ */
