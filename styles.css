@@ -71,7 +71,7 @@ body {
     border-right: 1px solid darkslategrey;
     font-size: 13px;
     text-shadow:  1px 1px #000000;
-    font-weight: 300;
+    font-weight: 600;
 }
 .main-nav li:last-child {
     border-right: none;
